@@ -1,0 +1,11 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: petclinic
+spec:
+  destinations:
+  - name: in-cluster
+    namespace: parko-petclinic-prod
+    server: https://kubernetes.default.svc
+  sourceRepos:
+  - https://github.com/mattparko/petclinic-argocd

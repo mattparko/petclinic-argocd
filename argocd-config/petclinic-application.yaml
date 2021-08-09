@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: petclinic
+spec:
+  destination:
+    name: in-cluster
+    namespace: parko-petclinic-prod
+  project: petclinic
+  source:
+    path: ./prod
+    repoURL: https://github.com/mattparko/petclinic-argocd
+  syncPolicy:
+    automated:
+      selfHeal: true
