@@ -5,9 +5,8 @@ metadata:
     app: petclinic
     app.kubernetes.io/part-of: petclinic
   name: petclinic
-  namespace: parko-petclinic-prod
 spec:
-  applicationImage: quay.io/mparkins/petclinic:2021-08-09-01-51-41
+  applicationImage: quay.io/mparkins/petclinic:2021-08-09-02-45-01
   applicationName: petclinic
   expose: true
   pullPolicy: IfNotPresent
