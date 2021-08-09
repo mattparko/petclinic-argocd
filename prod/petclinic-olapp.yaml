@@ -1,0 +1,17 @@
+apiVersion: openliberty.io/v1beta1
+kind: OpenLibertyApplication
+metadata:
+  labels:
+    app: petclinic
+    app.kubernetes.io/part-of: petclinic
+  name: petclinic
+  namespace: parko-petclinic-prod
+spec:
+  applicationImage: quay.io/mparkins/petclinic:2021-08-09-01-51-41
+  applicationName: petclinic
+  expose: true
+  pullPolicy: IfNotPresent
+  replicas: 1
+  service:
+    port: 9080
+    type: ClusterIP
