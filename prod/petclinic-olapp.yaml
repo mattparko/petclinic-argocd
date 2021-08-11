@@ -6,7 +6,7 @@ metadata:
     app.kubernetes.io/part-of: petclinic
   name: petclinic
 spec:
-  applicationImage: quay.io/mparkins/petclinic:2021-08-09-02-45-01
+  applicationImage: quay.io/mparkins/petclinic:2021-08-11-09-21-07
   applicationName: petclinic
   expose: true
   pullPolicy: IfNotPresent
